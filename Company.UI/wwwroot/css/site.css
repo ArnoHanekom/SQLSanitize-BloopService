@@ -1,0 +1,207 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.words-row-form {
+    font-size: 0.75rem;
+}
+
+.toast.show {
+    opacity: 0.8 !important;
+}
+
+.toast-body {
+    background-color: rgba(255,255,255,0.65);
+}
+
+.toast.position-absolute {
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.toast.show.position-absolute{
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.custom-file input, .custom-file label {
+    cursor: pointer;
+}
+
+section.main-word-list {
+    max-height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-left: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-right: 1px solid rgba(0,0,0,0.2);
+    border-radius: 0rem 0.5rem 0.5rem 0.5rem;
+}
+
+::-webkit-scrollbar {
+    width: 0.85em !important;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 3px 3px 10px rgba(0,0,0,0.3);
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    outline: none;
+    border-radius: 2rem;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+        outline: none;
+        border-radius: 2rem;
+    }
+
+.scroll-to-top {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.scroll-to-top {
+    margin-right: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+    opacity: 0.6 !important;
+    cursor: pointer;
+}
+
+    .scroll-to-top:hover {
+        opacity: 0.9 !important;
+    }
+
+.btn-to-top{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.btn-to-top:active, .btn-to-top:focus, .btn-to-top:not(:disabled):not(.disabled):active:focus{
+    box-shadow: none !important;
+}
+
+.btn-to-top > svg {
+    height: 1.8rem;
+    margin-left: -0.05rem;
+    margin-top: -0.05rem;    
+}
+
+    .btn-to-top:hover > svg {
+        filter: invert(1);
+    }
+
+.brand-ico {
+    height: 1.5rem;
+    margin-bottom: 0.35rem;
+    margin-right: 0.6rem;
+    fill: #8BD0DB;
+}
+
+a.navbar-brand {
+    border: 0.13em solid #fff;
+    border-radius: 0.5rem;
+    padding-left: 0.6rem;
+    padding-right: 0.5rem;
+    box-shadow: 0.05rem 0.05rem 0.45rem rgba(139,208,219,0.8);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transition: box-shadow 1s, background-color 1s;
+}
+
+    a.navbar-brand:hover {
+        text-decoration: underline !important;
+        text-underline-offset: 5px !important;        
+        box-shadow: 0.05rem 0.05rem 0.45rem rgba(0,255,255,0.8);
+        background-color: rgba(255,255,255,0.05);
+    }
+
+    a.navbar-brand > svg {        
+        fill: #00FFFF;
+        transition: fill 1s;
+    }
+
+    a.navbar-brand:hover > svg {
+        fill: #8BD0DB;
+    }
+
+.welcome-screen p, .welcome-screen li {
+    font-size: 0.95rem;
+}
+
+.list-header{
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}

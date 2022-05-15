@@ -1,0 +1,26 @@
+﻿@using Data.Processing.Models
+@model Sensitiveword
+
+<form method="POST">
+    <div class="row border-bottom bg-light align-items-center">
+        <div class="col-sm-1 text-center pt-1 pb-1">
+            @Html.DisplayFor(m => m.Id)
+        </div>
+        <div class="col-sm-4 pt-1 pb-1">
+            <b>@Html.DisplayFor(m => m.WordDefinition)</b>
+        </div>
+        <div class="col-sm-2 pt-1 pb-1 pl-3 text-left">
+            @Html.DisplayFor(m => m.CreatedOn)
+        </div>
+        <div class="col-sm-2 pt-1 pb-1 pl-3 text-left">
+            @Html.DisplayFor(m => m.ModifiedOn)
+        </div>
+        <div class="col-sm-3 pt-2 pb-2 text-right">
+            <button type="button" class="btn btn-sm btn-danger shadow mr-1" data-toggle="modal" data-target="#edit-word-@Model.Id">Edit</button>
+            <input type="submit" class="btn btn-sm btn-info shadow" formaction="/Word/Delete/@Model.Id" value="Delete" />
+        </div>
+    </div>
+</form>
+@{
+    await Html.RenderPartialAsync("_EditWord", Model);
+}

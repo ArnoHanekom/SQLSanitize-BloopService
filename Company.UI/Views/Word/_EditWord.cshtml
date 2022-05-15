@@ -1,0 +1,41 @@
+﻿@using Data.Processing.Models
+@model Sensitiveword
+<div class="modal fade" id="edit-word-@Model.Id" tabindex="-1" role="dialog" aria-labelledby="header-edit-word-@Model.Id" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form method="POST">
+            <div class="modal-header">
+                <h3 class="modal-title" id="header-edit-word-@Model.Id">Edit @Model.WordDefinition</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="Id" class="col-form-label-sm font-weight-bold">@Html.DisplayNameFor(m => m.Id)</label>                        
+                    <input class="form-control" id="Id" name="Id" type="hidden" value="@Model.Id">
+                    <input class="form-control" type="text" value="@Model.Id" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="WordDefinition" class="col-form-label-sm font-weight-bold">@Html.DisplayNameFor(m => m.WordDefinition)</label>                        
+                    <input class="form-control" id="WordDefinition" name="WordDefinition" type="text" value="@Model.WordDefinition">
+                </div>
+                <div class="form-group">
+                    <label for="CreatedOn" class="col-form-label-sm font-weight-bold">@Html.DisplayNameFor(m => m.CreatedOn)</label>                        
+                    <input class="form-control" id="CreatedOn" name="CreatedOn" type="hidden" value="@Model.CreatedOn">
+                    <input class="form-control" type="text" value="@Model.CreatedOn" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="ModifiedOn" class="col-form-label-sm font-weight-bold">@Html.DisplayNameFor(m => m.ModifiedOn)</label>                        
+                    <input class="form-control" id="ModifiedOn" name="ModifiedOn" type="hidden" value="@Model.ModifiedOn" disabled>
+                    <input class="form-control" type="text" value="@Model.ModifiedOn" disabled>
+                </div>                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <input type="submit" class="btn btn-primary" formaction="/Word/Update" value="Save changes" />
+            </div>
+            </form>
+        </div>
+    </div>
+</div> 
